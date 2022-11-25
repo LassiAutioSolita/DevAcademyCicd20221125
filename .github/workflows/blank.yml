@@ -36,7 +36,7 @@ jobs:
         run: exit 1
         
       - name: Run only if fails
-        if:  ${{ failure() }} 
+        if:  failure()
         run: Hello failure!
 
       - name: Output NPM version
