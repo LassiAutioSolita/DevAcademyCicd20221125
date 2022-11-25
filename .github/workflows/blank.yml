@@ -31,6 +31,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, $FULL_NAME!
+        
+      - name: FAIL!
+        run: exit 1
 
       - name: Output NPM version
         run: npm --version
