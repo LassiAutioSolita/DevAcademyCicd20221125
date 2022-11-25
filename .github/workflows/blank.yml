@@ -37,7 +37,7 @@ jobs:
         
       - name: Run only if fails
         if:  failure()
-        run: Hello failure!
+        run: echo Hello failure!
 
       - name: Output NPM version
         run: npm --version
